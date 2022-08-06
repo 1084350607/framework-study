@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title></title>
+</head>
+<body>
+  <div>
+    <input type="text" value="initalValue"/>
+  </div>
+  <script>
+    const input = document.getElementsByTagName('input')[0]
+    setInterval(() => {
+      // dom properties
+      console.log("DOM properties", input.value)
+      console.log("HTML Attribute:", input.getAttribute('value'))
+    }, 1000)
+  </script>
+</body>
+</html>
